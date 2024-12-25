@@ -1,0 +1,127 @@
+/* 부드러운 스크롤 */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 상단 네비게이션 스타일 */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #000000;
+    padding: 5px 0; /* 상하 패딩 추가 */
+}
+
+/* 콘텐츠 시작 위치 */
+body {
+    padding-top: 120px; /* nav와 콘텐츠 간 간격 추가 */
+    font-family: Poppins, sans-serif; /* 원하는 글꼴 */
+    font-size: 16px; /* 기본 글씨 크기 */
+    color: #000000; /* 기본 글씨 색상 */
+    line-height: 1.6; /* 줄 간격 */
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* 네비게이션 메뉴 가운데 정렬 */
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Profile 섹션 스타일 */
+#Profile {
+    text-align: center;
+    margin-top: 0px; /* About과 Profile 섹션 간 간격 */
+    padding: 30px;
+}
+
+#Profile img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%; /* 둥근 모서리 유지 */
+    width: 300px;
+    height: auto;
+}
+
+/* About 섹션 스타일 */
+.about-section {
+    margin-top: 50px; /* 상단 간격 */
+    padding: 20px;
+    background-color: #ffffff; /* 배경색 */
+    color: #000000; /* 텍스트 색상 */
+}
+
+/* Projects 섹션 스타일 */
+.projects-section {
+    margin-top: 70px; /* About 섹션과의 간격 */
+    padding: 20px;
+    background-color: #000000; /* 검정색 배경 */
+    color: #ffffff; /* 텍스트를 흰색으로 변경 */
+    text-align: center; /* 텍스트와 이미지를 모두 가운데 정렬 */
+}
+
+.projects-section ul {
+    list-style: none; /* 리스트 스타일 제거 */
+    padding: 0;
+}
+
+.projects-section img,
+#canvas-wrapper {
+    margin: 20px auto; /* 위아래 간격 추가 및 이미지/캔버스 가운데 정렬 */
+    display: block; /* 블록 요소로 설정하여 정렬 */
+    border-radius: 15px; /* 부드러운 둥근 모서리 */
+    width: 80%; /* 이미지 및 캔버스 너비를 조정 */
+    max-width: 700px; /* 최대 너비 제한 */
+    height: auto; /* 비율 유지 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* 약간의 그림자 추가 */
+}
+
+/* 헤딩 스타일 */
+h1 {
+    text-align: center;
+    font-size: 70px; /* h1 폰트 크기 */
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px; /* h2 폰트 크기 */
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5rem; /* h3 폰트 크기 */
+}
+
+/* 본문 텍스트 스타일 */
+p {
+    width: 60%; /* 텍스트 블록의 고정 너비 */
+    text-align: left; /* 텍스트를 왼쪽 정렬 */
+    margin: 0 auto; /* 가운데 정렬 */
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .projects-section img,
+    #canvas-wrapper {
+        width: 90%; /* 작은 화면에서 크기 조정 */
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-section img,
+    #canvas-wrapper {
+        width: 100%; /* 모바일 화면에서 크기 꽉 채움 */
+    }
+}
